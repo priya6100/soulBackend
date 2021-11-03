@@ -8,7 +8,7 @@ exports.createHomePage = (req, res) =>{
     const {banners} = req.files;
    
      req.body.banners = banners.map((banner, index) => ({
-            img: `${process.env.API}/public/${banner.filename}`,
+            img: `/public/${banner.filename}`,
            
         }));
     
